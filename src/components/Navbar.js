@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Navbar = () => {
   
     return (
-        <div>
+        <div className='w-100'>
             <nav>
                 <div className='container flex flex-wrap bg-purple h-12 items-center'>
                     <div className='mx-5'>
@@ -16,7 +16,7 @@ export const Navbar = () => {
                                 <Link to='/'> Recent News </Link> 
                             </li>
                             <li className='titleThumbnail block'> 
-                                <Link to='/top-rater'> Top Rater </Link> 
+                                <Link to='/top-rated'> Top Rated </Link> 
                             </li>
                             <li className='titleThumbnail block'> 
                                 <Link to='/categories'> Categories </Link> 

@@ -7,6 +7,7 @@ module.exports = {
       'pink': '#E6528A',
       'purple': '#A175D3',
       'white': '#ffffff',
+      'neutral':'#D4D4D4'
     },
   },
   plugins: [],

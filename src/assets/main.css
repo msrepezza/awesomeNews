@@ -486,9 +486,18 @@ video {
     max-width: 1536px;
   }
 }
+.m-2 {
+  margin: 0.5rem;
+}
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+.box-border {
+  box-sizing: border-box;
+}
+.box-content {
+  box-sizing: content-box;
 }
 .block {
   display: block;
@@ -496,11 +505,17 @@ video {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .h-12 {
   height: 3rem;
 }
 .max-w-sm {
   max-width: 24rem;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -508,10 +523,16 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -520,6 +541,10 @@ video {
 .bg-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(161 117 211 / var(--tw-bg-opacity));
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .titlePage {
