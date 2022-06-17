@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.titlePage {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14pt;
+}
+
+.titleThumbnail {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12pt;
+    text-transform: uppercase;
+    
+}
+
+.titleChannel {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.titleCategory {
+    color: rgb(161, 117, 211);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+.body {
+    color: rgb(29, 29, 38);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14pt;
+    
+}
+
+.bodyBold {
+    color: rgb(29, 29, 38);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    
+}
+
+.bodyDescription {
+    color: rgb(29, 29, 38);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12pt;
+}

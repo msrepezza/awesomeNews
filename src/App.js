@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Article } from './pages/articles/index'; 
+import { Category } from './pages/categories/index';
+import { MostRecent } from './pages/mostRecent/index';
+import { Navbar } from './components/Navbar';
+import { DataProvider } from './contexts/dataContext';
+import './assets/main.css';
 
-function App() {
+export const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <DataProvider>
+
+      <Navbar></Navbar>
+
+      <Routes>
+        <Route path='/' element={ <MostRecent /> } />
+        <Route path='top-rater' element={ <MostRecent /> } />
+        <Route path='article' element={ <Article /> } />
+        <Route path='categories' element={ <Category /> } />
+        <Route path='/*' element={ <Navigate to='/'/>}/>
+      </Routes>
+
+    </DataProvider>
   );
 }
 
