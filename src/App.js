@@ -5,6 +5,7 @@ import { MostRecent } from './pages/mostRecent/index';
 import { Navbar } from './components/Navbar';
 import { DataProvider } from './contexts/dataContext';
 import './assets/main.css';
+import { TopRated } from './pages/topRated';
 
 export const App = () => {
 
@@ -16,7 +17,7 @@ export const App = () => {
 
       <Routes>
         <Route path='/' element={ <MostRecent /> } />
-        <Route path='top-rater' element={ <MostRecent /> } />
+        <Route path='top-rated' element={ <TopRated /> } />
         <Route path='article' element={ <Article /> } />
         <Route path='categories' element={ <Category /> } />
         <Route path='/*' element={ <Navigate to='/'/>}/>
