@@ -9,7 +9,6 @@ export const DataProvider = ({ children }) => {
     const [data, setData] = useState( [] );
   
     const fetchData = async () => { 
-        console.log('fetchData')
         setData( await service() ) 
     }; 
 

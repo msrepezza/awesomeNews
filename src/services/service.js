@@ -5,11 +5,10 @@ const service = async () => {
 
     const response = await fetch(url);
     
-    console.log('servicio')
     if(response.ok)
         return response.json();
     else
-        throw "Not found information";
+        throw new Error("Not found information");
 
 }
 

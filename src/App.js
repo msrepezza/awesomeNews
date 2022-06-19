@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { DataProvider } from './contexts/dataContext';
 import './assets/main.css';
 import { TopRated } from './pages/topRated';
+import { ByCategory } from './pages/categories/byCategory';
 
 export const App = () => {
 
@@ -18,8 +19,9 @@ export const App = () => {
       <Routes>
         <Route path='/' element={ <MostRecent /> } />
         <Route path='top-rated' element={ <TopRated /> } />
-        <Route path='article' element={ <Article /> } />
+        <Route path={`article/:id`} element={ <Article /> } />
         <Route path='categories' element={ <Category /> } />
+        <Route path={`category/:category`} element={ <ByCategory /> } />
         <Route path='/*' element={ <Navigate to='/'/>}/>
       </Routes>
 
