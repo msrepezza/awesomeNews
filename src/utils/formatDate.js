@@ -8,5 +8,5 @@ export function formatDate(date){
         return formattedDate;
     }
     else
-        throw "Not found date";
+        throw new Error("Not found date")
 }
