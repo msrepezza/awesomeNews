@@ -16,6 +16,14 @@
     
 }
 
+.titleMenu {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    
+}
+
 .titleChannel {
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
