@@ -13,21 +13,24 @@ export const Category = () => {
       let newItem = {
         'id': i,
         'category': item.category,
-        'imageUrl': item.imageUrl
+        'thumbnailUrl': item.thumbnailUrl
       }
 
       acc.push(newItem);
     }
     return acc;
-    },[])
+  },[])
 
   return (
-    <div>
-      <div className='container'>
+    <div className='container'>
+      <div className='p-2'>
         <div className='grid grid-cols-3'>
           {
             categories.map(category => (
-              <CardCategory key={category.id} data={category}></CardCategory>
+              <CardCategory 
+                key={category.id} 
+                data={category}>
+              </CardCategory>
             ))
           }
         </div>
